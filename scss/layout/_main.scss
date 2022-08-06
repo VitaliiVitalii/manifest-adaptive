@@ -1,0 +1,70 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.main {
+    padding: 0 0 70px 0;
+
+    &__title {
+        font-family: $font-secondary;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 50px;
+        letter-spacing: 0.05em;
+        color: $black-default;
+        padding: 0 0 30px 0;
+
+        @include media($md) {
+            font-size: 33px;
+            padding:50px 0 60px 0; 
+        
+        }
+
+        @include media($lg) {
+            font-size: 48px;
+            line-height: 64px;
+            padding: 20px 0 50px 0;
+        
+        }
+
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $black-default;
+        padding: 70px 0 0 0;
+        margin: 0 0 40px 0;
+
+        @include media($md) {
+            font-size: 28px;
+        
+        }
+        
+        @include media($lg) {
+            padding: 90px 0 0 0;
+            margin: 0 0 50px 0;
+    
+        }
+        
+    }
+
+    &__text {
+        font-family: $font-primary;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        margin: 40px 0 0 0;
+
+        @include media($md) {
+            font-size: 18px;
+    
+        }
+
+    }
+
+}
+
+
+

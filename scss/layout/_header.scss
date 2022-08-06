@@ -1,0 +1,21 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.header {
+
+  &__title {
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    color: $black-default;
+    text-transform: uppercase;
+    padding: 20px 0;
+
+    @include media($lg) {
+      padding: 40px 0 20px 0;
+
+    }
+
+  }
+
+}

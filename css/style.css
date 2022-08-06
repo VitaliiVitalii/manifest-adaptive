@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@400;500;600&display=swap");
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**********  Fonts  **********/
+/********* Colors ***********/
+/********  Widths ***********/
+/********  Breakpoints ******/
+/***** Padding ******/
+body {
+  font-family: "Red Hat Display", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  color: #565656;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 0;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__title {
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+@media screen and (min-width: 1440px) {
+  .header__title {
+    padding: 40px 0 20px 0;
+  }
+}
+
+.main {
+  padding: 0 0 70px 0;
+}
+.main__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding: 0 0 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .main__title {
+    font-size: 33px;
+    padding: 50px 0 60px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__title {
+    font-size: 48px;
+    line-height: 64px;
+    padding: 20px 0 50px 0;
+  }
+}
+.main__subtitle {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+  padding: 70px 0 0 0;
+  margin: 0 0 40px 0;
+}
+@media screen and (min-width: 768px) {
+  .main__subtitle {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main__subtitle {
+    padding: 90px 0 0 0;
+    margin: 0 0 50px 0;
+  }
+}
+.main__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  margin: 40px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  .main__text {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  background: #F4F4F4;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  padding: 55px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.footer__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  margin: 0 0 20px 0;
+}
+.footer__info {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  margin: 0 0 15px 0;
+}
+.footer__info-copy {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background: #F4F4F4;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .footer__title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin: 0 0 20px 0;
+  }
+  .footer__info {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+  }
+  .footer__info-copy {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+  }
+
+  .socials-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 270px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    background: #F4F4F4;
+    color: #000000;
+    font-weight: 400;
+    padding: 70px 0 30px;
+    text-align: left;
+  }
+  .footer__title {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin: 0 0 20px 0;
+  }
+  .footer__info {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+  }
+  .footer__info-copy {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+.socials-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0 40px;
+  margin: 0 auto;
+  width: 270px;
+}
+.socials-links svg {
+  width: 50px;
+  height: 50px;
+}
+.socials-links svg:hover #icon {
+  fill: #F4F4F4;
+}
+.socials-links svg:hover #icon_bg {
+  fill: #565656;
+}
+@media screen and (min-width: 1440px) {
+  .socials-links {
+    position: absolute;
+    top: 105px;
+    right: 135px;
+  }
+}
+
+.position {
+  position: relative;
+}
+
+.image-box__items img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

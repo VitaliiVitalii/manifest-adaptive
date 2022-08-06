@@ -1,0 +1,11 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+.image-box {
+    
+    &__items img {
+        width: 100%;
+
+    }
+
+}

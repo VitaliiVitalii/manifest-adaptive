@@ -1,0 +1,33 @@
+@use '../variables/variables' as *;
+@use '../mixins/media' as *;
+
+body {
+  font-family: $font-secondary;
+  width: 100%;
+  min-width: $sm;
+  color: $primary;
+  font-size: $font-size-default;
+}
+
+.container {
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 $sm-padding;
+
+  @include media($md) {
+    padding: 0 $md-padding;
+    
+  }
+
+  @include media($lg) {
+    padding: 0 0;
+
+  }
+
+}
+
+.flex {
+  display: flex;
+  
+}
